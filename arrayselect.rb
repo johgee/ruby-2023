@@ -122,13 +122,13 @@
 
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
-numbers = [2, 4, 5, 1, 8, 9, 7]
-odd_numbers = []
-index = 0
-while index < numbers.length
-  if numbers[index] % 2 == 1
-    odd_numbers << numbers[index]
-  end
-  index += 1
-end
-p odd_numbers
+# numbers = [2, 4, 5, 1, 8, 9, 7]
+# odd_numbers = []
+# index = 0
+# while index < numbers.length
+#   if numbers[index] % 2 == 1
+#     odd_numbers << numbers[index]
+#   end
+#   index += 1
+# end
+# p odd_numbers
