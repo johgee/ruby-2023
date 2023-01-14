@@ -126,13 +126,81 @@
 
 # p reverse("abcde")
 
-def find_longest_word(string)
-  find_longest_word = ""
-  words = string.split(" ")
-  words.each do |word|
-    find_longest_word = word unless word.length < find_longest_word.length
-  end
-  return find_longest_word
-end
+# def find_longest_word(string)
+#   find_longest_word = ""
+#   words = string.split(" ")
+#   words.each do |word|
+#     find_longest_word = word unless word.length < find_longest_word.length
+#   end
+#   return find_longest_word
+# end
 
-p find_longest_word("this is my sentence")
+# p find_longest_word("this is my sentence")
+
+# WEEK THREE
+# numbers = [1, 2, 4, 2]
+# even_numbers = []
+# numbers.each do |number|
+#   if number % 2 == 0
+#     even_numbers << number
+#   end
+# end
+# p even_numbers
+
+# numbers = [1, 2, 4, 2]
+# even_numbers = numbers.select do |number|
+#   number % 2 == 0
+# end
+
+# p even_numbers
+
+# create a new array of hashes that only contain movies with a rating less than 4.0.
+
+# movies = [
+#   { id: 1, title: "Die Hard", rating: 4.0 },
+#   { id: 2, title: "Bad Boys", rating: 5.0 },
+#   { id: 3, title: "The Chamber", rating: 3.0 },
+#   { id: 4, title: "Fracture", rating: 2.0 },
+# ]
+
+# low_rating = movies.select do |movie|
+#   movie[:rating] < 4.0
+# end
+
+# p low_rating
+
+####################################
+# convert the array of hashes into an array of hashes that only contain movie ids of the movies with the letter 'b' in the title (case insensitive)
+
+# movies = [
+#   { id: 1, title: "Die Hard", rating: 4.0 },
+#   { id: 2, title: "Bad Boys", rating: 5.0 },
+#   { id: 3, title: "The Chamber", rating: 3.0 },
+#   { id: 4, title: "Fracture", rating: 2.0 },
+# ]
+
+# letter_b = movies.map do |movie|
+#   movie[:title].length == "B"
+# end
+# p letter_b[:id]
+
+#palindrome
+# def palindrome(string)
+#   reversed_string = []
+#   index = string.length - 1
+#   while index >= 0
+#     reversed_string << string[index]
+#     index -= 1
+#   end
+#   string == reversed_string.join()
+# end
+
+# p palindrome("racecar")
+
+#############################
+#split array
+# def split_array(array, n)
+# end
+
+# p split_array([0, 1, 2, 3, 4, 5], 2)
+# p split_array([0, 1, 2, 3, 4, 5], 3)
