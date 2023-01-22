@@ -20,6 +20,11 @@
 # end
 # p small_numbers
 
+# small_numbers = numbers.select do |number|
+#   number < 20
+# end
+# p small_numbers
+
 #  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
 #     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
 # strings = ["winner", "winner", "chicken", "dinner"]
@@ -38,6 +43,11 @@
 #   if string[0] == "w"
 #     w_strings << string
 #   end
+# end
+# p w_strings
+
+# w_strings = strings.select do |string|
+#   string[0] == "w"
 # end
 # p w_strings
 
@@ -61,7 +71,11 @@
 #     expensive_items << item
 #   end
 # end
+# p expensive_items
 
+# expensive_items = items.select do |item|
+#   item[:price] > 5
+# end
 # p expensive_items
 
 #  4. Start with an array of numbers and create a new array with only the even numbers.
@@ -82,6 +96,11 @@
 #   if number % 2 == 0
 #     even_numbers << number
 #   end
+# end
+# p even_numbers
+
+# even_numbers = numbers.select do |number|
+#   number % 2 == 0
 # end
 # p even_numbers
 
@@ -107,6 +126,11 @@
 # end
 # p short_words
 
+# short_words = words.select do |word|
+#   word.length < 4
+# end
+# p short_words
+
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 # things = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
@@ -125,6 +149,11 @@
 #   if thing[:name].length < 6
 #     short_name_things << thing
 #   end
+# end
+# p short_name_things
+
+# short_name_things = things.select do |thing|
+#   thing[:name].length < 6
 # end
 # p short_name_things
 
@@ -150,6 +179,11 @@
 # end
 # p small_numbers
 
+# small_numbers = numbers.select do |number|
+#   number < 10
+# end
+# p small_numbers
+
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
 # words = ["big", "little", "good", "bad"]
@@ -168,6 +202,11 @@
 #   if word[0] != "b"
 #     non_b_words << word
 #   end
+# end
+# p non_b_words
+
+# non_b_words = words.select do |word|
+#   word[0] != "b"
 # end
 # p non_b_words
 
@@ -193,9 +232,14 @@
 # end
 # p inexpensive
 
+# inexpensive = items.select do |item|
+#   item[:price] < 10
+# end
+# p inexpensive
+
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
-numbers = [2, 4, 5, 1, 8, 9, 7]
+# numbers = [2, 4, 5, 1, 8, 9, 7]
 # odd_numbers = []
 # index = 0
 # while index < numbers.length
@@ -206,10 +250,15 @@ numbers = [2, 4, 5, 1, 8, 9, 7]
 # end
 # p odd_numbers
 
-odd_numbers = []
-numbers.each do |number|
-  if number % 2 == 1
-    odd_numbers << number
-  end
-end
-p odd_numbers
+# odd_numbers = []
+# numbers.each do |number|
+#   if number % 2 == 1
+#     odd_numbers << number
+#   end
+# end
+# p odd_numbers
+
+# odd_numbers = numbers.select do |number|
+#   number % 2 == 1
+# end
+# p odd_numbers
