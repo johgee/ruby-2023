@@ -14,17 +14,32 @@
 # input: [99, 101, 88, 4, 2000, 50]
 # output: [99, 88, 4, 50]
 
-def less_than(array)
-  small = []
+# def less_than(array)
+#   small = []
+#   index = 0
+#   while index < array.length
+#     small_num = array[index]
+#     if small_num < 100
+#       small << small_num
+#     end
+#     index += 1
+#   end
+#   return small
+# end
+
+# p less_than([99, 101, 88, 4, 2000, 50])
+
+# input: [4,2,5,99,-4]
+# output: [8,4,10,198,-8]
+
+def twice(array)
+  bigger = []
   index = 0
   while index < array.length
-    small_num = array[index]
-    if small_num < 100
-      small << small_num
-    end
+    bigger << array[index] * 2
     index += 1
   end
-  return small
+  return bigger
 end
 
-p less_than([99, 101, 88, 4, 2000, 50])
+p twice([4, 2, 5, 99, -4])
